@@ -8,7 +8,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 */
 
 .Main{
-    -fx-background-color: #55423d;
+    -fx-background-color: light;
     -fx-padding: 10;
     -fx-alignment: TOP_CENTER;
     -fx-spacing: 20;
@@ -16,7 +16,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 
 
 .title{
-    -fx-fill: #fff3ec;
+    -fx-fill: black;
     -fx-font-size: 50;
     -fx-stroke: #140d0b;
     -fx-stroke-width: 3;
@@ -26,10 +26,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 .Button{
     -fx-font-size: 20;
     -fx-background-color: #ffc0ad;
-    -fx-text-fill: #271c19;
-    -fx-pref-width: 200;
-}
-
-TextField{
+    -fx-text-fill: black;
     -fx-pref-width: 200;
 }

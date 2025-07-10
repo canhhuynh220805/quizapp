@@ -9,17 +9,17 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="603.0" styleClass="Main" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.htc.demo.QuestionsController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="521.0" prefWidth="600.0" styleClass="Main" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.htc.demo.QuestionsController">
    <children>
       <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Quản lí câu hỏi" />
       <TextArea prefHeight="69.0" prefWidth="580.0" promptText="Ngập nội dung câu hỏi....." />
       <HBox prefHeight="50.0" prefWidth="580.0" styleClass="Main">
          <children>
             <ComboBox fx:id="cbCates" prefWidth="150.0" promptText="Danh mục" />
-            <ComboBox prefWidth="150.0" promptText="Mức độ khó" />
+            <ComboBox fx:id="cbLevels" prefWidth="150.0" promptText="Mức độ khó" />
          </children>
       </HBox>
-      <VBox prefHeight="259.0" prefWidth="577.0" styleClass="Main">
+      <VBox fx:id="vboxChoice" prefHeight="158.0" prefWidth="578.0" styleClass="Main">
          <children>
             <HBox prefHeight="42.0" prefWidth="561.0" styleClass="Main">
                <children>
@@ -30,23 +30,11 @@
             <HBox prefHeight="50.0" prefWidth="561.0" styleClass="Main">
                <children>
                   <RadioButton mnemonicParsing="false" />
-                  <TextField prefHeight="26.0" prefWidth="316.0" />
-               </children>
-            </HBox>
-            <HBox prefHeight="100.0" prefWidth="200.0" styleClass="Main">
-               <children>
-                  <RadioButton mnemonicParsing="false" />
-                  <TextField prefHeight="26.0" prefWidth="317.0" />
-               </children>
-            </HBox>
-            <HBox prefHeight="50.0" prefWidth="561.0" styleClass="Main">
-               <children>
-                  <RadioButton mnemonicParsing="false" />
-                  <TextField prefHeight="26.0" prefWidth="316.0" />
+                  <TextField prefHeight="26.0" prefWidth="316.0" styleClass="textField" />
                </children>
             </HBox>
          </children>
       </VBox>
-      <Button mnemonicParsing="false" styleClass="Button" text="Thêm đáp án" />
+      <Button mnemonicParsing="false" onAction="#addChoice" styleClass="Button" text="Thêm đáp án" />
    </children>
 </VBox>

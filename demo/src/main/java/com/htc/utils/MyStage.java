@@ -5,6 +5,7 @@
 package com.htc.utils;
 
 import com.htc.demo.App;
+import com.htc.utils.themes.ThemeManager;
 import java.io.IOException;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -39,6 +40,7 @@ public class MyStage {
             } else {
                 scene.setRoot(new FXMLLoader(App.class.getResource(fxml)).load());
             }
+            ThemeManager.applyTheme(scene);
             stage.setScene(scene);
             stage.show();
         }
