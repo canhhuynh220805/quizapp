@@ -1,0 +1,69 @@
+admin@908 MINGW64 /d/quizapp (main)
+$ git commit -m "update code"
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'admin@908.(none)')
+
+admin@908 MINGW64 /d/quizapp (main)
+$ ^C
+
+admin@908 MINGW64 /d/quizapp (main)
+$  git config --global user.email "huynhthecanhpvh@gmail.com"
+
+admin@908 MINGW64 /d/quizapp (main)
+$ git config --global user.name "canhhuynh220805"
+
+admin@908 MINGW64 /d/quizapp (main)
+$ git commit -m "update code"
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+[main 788d086] update code
+ 27 files changed, 661 insertions(+), 71 deletions(-)
+ create mode 100644 demo/src/main/java/com/htc/pojo/Choice.java
+ create mode 100644 demo/src/main/java/com/htc/pojo/Level.java
+ create mode 100644 demo/src/main/java/com/htc/pojo/Question.java
+ create mode 100644 demo/src/main/java/com/htc/services/BaseServices.java
+ create mode 100644 demo/src/main/java/com/htc/services/LevelServices.java
+ create mode 100644 demo/src/main/java/com/htc/utils/themes/DarkThemeFactory.jav
+a
+ create mode 100644 demo/src/main/java/com/htc/utils/themes/DefaultThemeFactory.
+java
+ create mode 100644 demo/src/main/java/com/htc/utils/themes/LightThemeFactory.ja
+va
+ create mode 100644 demo/src/main/java/com/htc/utils/themes/Theme.java
+ create mode 100644 demo/src/main/java/com/htc/utils/themes/ThemeFactory.java
+ create mode 100644 demo/src/main/java/com/htc/utils/themes/ThemeManager.java
+ create mode 100644 demo/src/main/resources/com/htc/demo/dark.css
+ create mode 100644 demo/src/main/resources/com/htc/demo/light.css
+ create mode 100644 demo/target/classes/com/htc/demo/dark.css
+ create mode 100644 demo/target/classes/com/htc/demo/light.css
+ rewrite demo/target/maven-status/maven-compiler-plugin/compile/default-compile/
+inputFiles.lst (99%)
+
+admin@908 MINGW64 /d/quizapp (main)
+$ git push
+Enumerating objects: 80, done.
+Counting objects: 100% (77/77), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (38/38), done.
+Writing objects: 100% (49/49), 7.76 KiB | 1.55 MiB/s, done.
+Total 49 (delta 17), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (17/17), completed with 9 local objects.
+To https://github.com/canhhuynh220805/quizapp.git
+   e0df46d..788d086  main -> main
